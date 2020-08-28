@@ -6,13 +6,13 @@ const path = require('path');
 
 
 // Your dist folder
-app.use(express.static(__dirname + '/angularapp'));
+app.use(express.static(__dirname + '/primeraclaseutn'));
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
 
 app.get('/*', function(req,res) {
-  res.sendFile(path.join(__dirname+'/angularapp/index.html'));
+  res.sendFile(path.join(__dirname+'/primeraclaseutn/src/index.html'));
 });
 
 console.log('Build successful');
