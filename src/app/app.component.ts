@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primerclaseutn';
+  public number1 : number;
+  public number2 : number;
+  public result1 : number;
+  public result2 : number;
+
+  public calc(){
+    this.result1 = (this.number1 + this.number2)/2
+    this.result2 = this.number1 + this.number2
+
+  }
+
+  public limpiar(){
+   // this.result1 = "";
+    //this.result2 ="" ;
+    //this.number1 = "";
+    //this.number2 ="" ;
+  }
+
 }
